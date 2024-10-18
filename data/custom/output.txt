@@ -1,0 +1,55 @@
+下面是一个使用微软VBA语言编写的获取CATIA应用程序实例的函数，该函数没有参数，返回获取的CATIA应用程序实例。
+
+```VBA
+Function GetCATIAApplication()
+    Dim catiaApp As Object
+
+    Try
+        '使用GetObject函数获取COM组件的实例
+        catiaApp = GetObject("", "CATIA.Application")
+        '(INFITF.Application)Marshal.GetActiveObject("CATIA.Application")
+
+    Catch ex1 As Exception
+        '捕获并处理异常
+        'WScript.Echo("can not get catia, create instance:{0}", ex1.Message)
+        'Console.WriteLine("can not get catia, create instance:{0}", ex1.Message)
+        'ConcatMessagesStrings(False, "can not get catia, create instance:", ex1.Message)
+        Debug.Print "can not get catia, create instance:" & ex1.Message
+
+        Try
+            '创建Catia应用程序实例
+            catiaApp = CreateObject("CATIA.Application")
+        Catch ex2 As Exception
+            'ConcatMessagesStrings(False, "create instance error:", ex1.Message)
+            Debug.Print "create instance error:" & ex1.Message
+            Exit Sub
+        End Try
+
+    End Try
+
+    If catiaApp Is Nothing Then
+        'ConcatMessagesStrings(True, "Can not get CATIA appliction!")
+        Debug.Print "Can not get CATIA appliction!"
+        Exit Sub
+    End If
+
+    '设置为true可使Catia界面可见
+    catiaApp.Visible = True
+
+    GetCATIAApplication catiaApp
+End Function
+```
+
+这个函数首先使用GetObject方法获取CATIA应用程序实例。如果返回空，就使用CreateObject方法来创建一个实例，并返回。
+
+例如，可以这样调用该函数来获取CATIA应用程序实例:
+```vba
+Dim CATIA As CATIA.Application
+Set CATIA = GetCATIAApplication
+
+If Not CATIA Is Nothing Then
+    MsgBox "成功获取了CATIA应用程序对象。", vbInformation
+Else
+    MsgBox "无法获取CATIA应用程序对象。请检查代码。", vbExclamation
+End If
+```
