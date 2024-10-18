@@ -1,4 +1,11 @@
 {
+  "custom_identity": {
+    "file_name": "custom_identity.json"
+  },
+  "custom_catia": {
+    "file_name": "custom_catia.json"
+  },
+
   "identity": {
     "file_name": "identity.json"
   },
