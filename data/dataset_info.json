@@ -5,7 +5,10 @@
   "custom_catia": {
     "file_name": "custom_catia.json"
   },
-
+  "custom_tc": {
+    "file_name": "custom_tc.json"
+  },
+  
   "identity": {
     "file_name": "identity.json"
   },
