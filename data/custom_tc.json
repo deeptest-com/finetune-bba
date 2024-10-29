@@ -5,38 +5,38 @@
     "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"G58\"}}"
   },
   {
-    "instruction": "add part 000288 to project G58.",
+    "instruction": "add part Part01 to project Project01.",
     "input": "",
-    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"G58\"}}"
+    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"Part01\", \"project\": \"Project01\"}}"
   },
   {
-    "instruction": "分配项目G58到配件000288。",
+    "instruction": "分配项目A到配件0009。",
     "input": "",
-    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"G58\"}}"
+    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"0009\", \"project\": \"A\"}}"
   },
   {
-    "instruction": "设置配件000288的项目为G58。",
+    "instruction": "设置配件p3的项目为abc。",
     "input": "",
-    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"G58\"}}"
+    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"p3\", \"project\": \"abc\"}}"
   },
   {
-    "instruction": "配件000288的项目属性设为G58。",
+    "instruction": "配件p_a06的项目属性设为G58。",
     "input": "",
-    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"G58\"}}"
+    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"p_a06\", \"project\": \"G58\"}}"
   },
   {
-    "instruction": "将配件000288加入到项目G58。",
+    "instruction": "将配件000288加入到项目PRJ_01。",
     "input": "",
-    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"G58\"}}"
+    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"PRJ_01\"}}"
   },
   {
-    "instruction": "将配件000288分配至项目G58。",
+    "instruction": "将配件001分配至项目A8。",
     "input": "",
-    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"G58\"}}"
+    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"001\", \"project\": \"A8\"}}"
   },
   {
-    "instruction": "在项目G58中加入配件000288。",
+    "instruction": "在项目X中加入配件Y。",
     "input": "",
-    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"000288\", \"project\": \"G58\"}}"
+    "output": "{\"action\": \"assign_project\",\"parameters\": {\"part\": \"Y\", \"project\": \"X\"}}"
   }
 ]
