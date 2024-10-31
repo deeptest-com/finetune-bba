@@ -11,6 +11,9 @@
   "custom_tc": {
     "file_name": "custom_tc.json"
   },
+  "custom_test": {
+    "file_name": "custom_test.json"
+  },
 
   "identity": {
     "file_name": "identity.json"
