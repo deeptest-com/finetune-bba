@@ -36,6 +36,8 @@ def preprocess_pretrain_dataset(
         if data_args.template == "gemma":
             text_examples = [tokenizer.bos_token + example for example in text_examples]
 
+        print('!!!!!!', data_args.cutoff_len)
+
         result = tokenizer(text_examples, add_special_tokens=False, truncation=True, max_length=data_args.cutoff_len)
     else:
         tokenized_examples = tokenizer(text_examples, add_special_tokens=False)
