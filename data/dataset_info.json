@@ -5,8 +5,11 @@
   "custom_catia": {
     "file_name": "custom_catia.json"
   },
-  "custom_catia2": {
-    "file_name": "custom_catia2.json"
+  "custom_catia_small": {
+    "file_name": "custom_catia_small.json"
+  },
+  "custom_catia_with_comment": {
+    "file_name": "custom_catia_with_comment.json"
   },
   "custom_tc": {
     "file_name": "custom_tc.json"
